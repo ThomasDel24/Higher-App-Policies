@@ -1,0 +1,468 @@
+body {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+#first-scroll {
+    position: absolute;
+    top: 0;
+}
+
+.scroll-location {
+    position: absolute;
+    top: -100px;
+    /* To account for fixed navbar*/
+}
+ 
+/* First Section CSS */
+
+#first-section {
+    background-color: #E5ECEE;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 140px 60px 40px 60px;
+}
+
+#first-heading {
+    color: #363F41;
+    font-size: 3.4rem;
+    margin: 0px;
+}
+
+#first-subheading {
+    font-size: 2.15rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 15px 0px;
+}
+
+#download-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#higherapp-icon {
+    height: 70px;
+    border-radius: 10px;
+}
+
+#download-google {
+    height: 75px;
+}
+
+#download-apple {
+    height: 55px;
+    margin: 0px 10px 0px 25px;
+}
+
+#first-right {
+    margin-left: auto;
+}
+
+#phone-image {
+    margin-right: 25px;
+    height: 500px;
+}
+
+@media (max-width: 991px) {
+#first-section {
+    display: block;
+    height: auto;
+}
+
+#first-heading {
+    text-align: center;
+}
+
+#first-subheading {
+    text-align: center;
+}
+
+#download-container {
+    justify-content: center;
+}
+
+#first-right {
+    display: flex;
+}
+
+#phone-image {
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.scroll-location {
+    top: 0px;
+}
+
+#first-section {
+    padding: 0px 0px 15px 0px;
+}
+
+#first-heading {
+    font-size: 1.3rem;
+}
+
+#first-subheading {
+    font-size: 1.1rem;
+}
+
+#download-container {
+    margin-top: 10px;
+}
+
+#higherapp-icon {
+    display: none;
+}
+
+#download-google {
+    height: 55px;
+}
+
+#download-apple {
+    height: 40px;
+    margin: 0px;
+}
+
+#phone-image {
+    height: 300px;
+}
+}
+
+/* Second Section CSS */
+
+.second-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 575px;
+    background-color: #FFF;
+}
+
+#second-right {
+    max-width: 450px;
+    margin-left: 12.5vw;
+}
+
+
+#second-left {
+    max-width: 450px;
+    order: 1;
+}
+
+.second-heading {
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+ 
+.second-subheading {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 5px 0px;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+#home-screen {
+    height: 500px;
+}
+
+#second-images-container {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    width: 575px;
+    height: 500px;
+    overflow: hidden;
+        order: 2;
+}
+
+#detail-screen {
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+}
+
+#saved-screen {
+    height: 500px;
+    position: absolute;
+    right: -20px;
+}
+
+#second-section-graybg {
+    background-color: #f5f5f5;
+    flex-direction: column;
+    height: 425px;
+}
+
+#industries-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.industry-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 65px;
+}
+
+.industry-text {
+    text-align: center;
+        font-size: 1.5rem;
+        font-weight: normal;
+}
+
+.industry-background {
+    height: 115px; 
+    width: 115px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #FFF;
+}
+
+#blockchain-background {
+    background-image: linear-gradient(to bottom right, #ef6136, #fbb040);
+}
+
+#fintech-background {
+    background-image: linear-gradient(to bottom right, #00ddd6, #3366ff);
+}
+
+#gaming-background {
+    background-image: linear-gradient(147deg, #f71735, #db3445);
+}
+
+#sustainability-background {
+    background-image: linear-gradient(to bottom right, #0eae56, #0c7375);
+}
+
+@media (max-width: 991px) {
+.second-section {
+    display: block;
+    height: auto;
+    text-align: center;
+        padding: 25px 40px;
+}
+
+#second-right {
+    margin-left: 0px;
+}
+
+#second-right, #second-left {
+    max-width: none;
+}
+
+#second-images-container {
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+#home-screen {
+    height: 450px;
+}
+
+#detail-screen {
+    height: 450px;
+    position: relative;
+    left: 45px;
+}
+
+#saved-screen {
+        height: 450px;
+    position: relative;
+    right: 45px;
+}
+
+#second-section-graybg {
+    height: auto;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#industries-container {
+    flex-wrap: wrap;
+}
+
+.industry-container {
+    width: 115px;
+}
+}
+
+@media (max-width: 767px) {
+
+.second-subheading {
+    font-size: 1.25rem;
+}
+
+#home-screen {
+    height: 300px;
+}
+
+#detail-screen {
+    height: 250px;
+    left: 25px;
+}
+
+#saved-screen {
+    height: 250px;
+    right: 25px;
+}
+
+.industry-container {
+    width: auto;
+}
+
+#industries-container {
+    display: block;
+}
+
+.industry-text {
+    font-size: 1.25rem;
+}
+
+.industry-background {
+    height: 100px; 
+    width: 100px;
+    font-size: 35px;
+}
+
+}
+
+/* Third Section CSS */
+
+#third-section {
+    background-color: #E5ECEE;
+    height: 575px;
+    position: relative;
+}
+
+#third-heading {
+    font-size: 3.25rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 65px;
+}
+
+#third-subheading {
+    text-align: center;
+    font-size: 1.7rem;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#third-body-container {
+    font-size: 50px;
+    color: #FF7E20;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    /*Used as relative scale for Font Awesome*/
+}
+
+.third-body-sub-container {
+    text-align: center;
+    width: 250px;
+}
+
+.third-body-maintext {
+    font-size: 2rem;
+    color: #000;
+    margin: 25px 0px;
+}
+
+.third-body-subtext {
+    font-size: 1.3rem;
+    color: #000;
+    margin: 0px;
+}
+
+@media (max-width: 767px) {
+#third-section {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+#third-heading {
+    font-size: 2.5rem;
+}
+
+#third-subheading {
+    width: auto;
+    font-size: 1.6rem;
+}
+
+#third-body-container {
+    display: block;
+    margin-top: 50px;
+}
+
+.third-body-sub-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.third-body-maintext {
+    margin: 15px 0px;
+}
+}
+
+/* Fourth Section CSS */
+
+#fourth-section {
+    background-color: #000;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fourth-heading {
+    color: #FFF;
+    font-size: 3.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+#fourth-subheading {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#fourth-button {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    padding: 12.5px 50px;
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 700;
+}
+
